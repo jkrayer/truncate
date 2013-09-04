@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!-- credit: http://paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="lt-ie10 lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="lt-ie10 lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="lt-ie10" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="" lang="en"> <!--<![endif]-->
+<head>
+  <!-- Of course one could use modernizr instead -->
+  <script>document.documentElement.className += ' js';</script>
+
+  <!-- Set Site/Page Meta -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+
+  <title>Truncate Text Test</title>
+
+  <style>
+  </style>
+
+
+</head>
+
+<body>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis magna tellus, egestas ut erat sed, aliquam ultricies ante. Integer ac nunc at justo consequat aliquet. Integer vel ullamcorper justo. Aenean faucibus libero ut fermentum varius. Etiam sollicitudin est ut mauris auctor, non tincidunt metus eleifend. Aliquam pulvinar magna a sem imperdiet rhoncus. Ut et enim erat. Suspendisse scelerisque non turpis non sodales. In vulputate, augue quis tincidunt pretium, lacus odio tincidunt tellus, congue vehicula justo ante et purus. Suspendisse porta euismod leo, a vulputate diam hendrerit et. Aliquam erat volutpat. Aenean sit amet venenatis tellus. Donec in massa urna. Suspendisse quis vulputate augue, ac convallis magna.</p>
+  <p id="truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis magna tellus, egestas ut erat sed, aliquam ultricies ante. Integer ac nunc at justo consequat aliquet. Integer vel ullamcorper justo. Aenean faucibus libero ut fermentum varius. Etiam sollicitudin est ut mauris auctor, non tincidunt metus eleifend. Aliquam pulvinar magna a sem imperdiet rhoncus. Ut et enim erat. Suspendisse scelerisque non turpis non sodales. In vulputate, augue quis tincidunt pretium, lacus odio tincidunt tellus, congue vehicula justo ante et purus. Suspendisse porta euismod leo, a vulputate diam hendrerit et. Aliquam erat volutpat. Aenean sit amet venenatis tellus. Donec in massa urna. Suspendisse quis vulputate augue, ac convallis magna.</p>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.2.3/jquery.min.js"></script>
+  <script src="../jquery-truncate.js"></script>
+  <script>
+    $('#truncate').truncate();
+  </script>
+
+</body>
+</html>

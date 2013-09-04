@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!-- credit: http://paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="lt-ie10 lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="lt-ie10 lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="lt-ie10" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="" lang="en"> <!--<![endif]-->
+<head>
+  <!-- Of course one could use modernizr instead -->
+  <script>document.documentElement.className += ' js';</script>
+
+  <!-- Set Site/Page Meta -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+
+  <title>Truncate Text Test</title>
+
+  <style>
+  </style>
+
+
+</head>
+
+<body>
+  <p><a href="#" title="">Lorem ipsum</a> dolor sit amet, <a href="#" title="">consectetur adipiscing</a> <img src="" width="" height="" alt="" />elit. Duis magna tellus, <a href="#" title="">egestas ut</a> erat sed, aliquam ultricies ante. <a href="#" title="">Integer ac nunc</a> at justo consequat aliquet. <a href="#" title="">Integer vel ullamcorper</a> justo. Aenean faucibus libero ut fermentum varius. Etiam <a href="#" title="">sollicitudin</a> est ut mauris auctor, <a href="#" title="">non tincidunt</a> metus eleifend. <a href="#" title="">Aliquam pulvinar</a> magna a sem imperdiet rhoncus. <a href="#" title="">Ut et enim</a> erat. Suspendisse scelerisque non <a href="#" title="">turpis non</a> sodales. In vulputate, <a href="#" title="">augue quis</a> tincidunt pretium, lacus odio <a href="#" title="">tincidunt tellus</a>, congue vehicula <a href="#" title="">justo ante</a> et purus. <a href="#" title="">Suspendisse porta euismod</a> leo, a vulputate diam hendrerit et. <a href="#" title="">Aliquam erat</a> volutpat. <a href="#" title="">Aenean sit amet</a> venenatis tellus. Donec in massa urna. Suspendisse quis vulputate augue, ac convallis magna.</p>
+  <p id="truncate"><a href="#" title="">Lorem ipsum</a> dolor sit amet, <a href="#" title="">consectetur adipiscing</a> <img src="" width="" height="" alt="" />elit. Duis magna tellus, <a href="#" title="">egestas ut</a> erat sed, aliquam ultricies ante. <a href="#" title="">Integer ac nunc</a> at justo consequat aliquet. <a href="#" title="">Integer vel ullamcorper</a> justo. Aenean faucibus libero ut fermentum varius. Etiam <a href="#" title="">sollicitudin</a> est ut mauris auctor, <a href="#" title="">non tincidunt</a> metus eleifend. <a href="#" title="">Aliquam pulvinar</a> magna a sem imperdiet rhoncus. <a href="#" title="">Ut et enim</a> erat. Suspendisse scelerisque non <a href="#" title="">turpis non</a> sodales. In vulputate, <a href="#" title="">augue quis</a> tincidunt pretium, lacus odio <a href="#" title="">tincidunt tellus</a>, congue vehicula <a href="#" title="">justo ante</a> et purus. <a href="#" title="">Suspendisse porta euismod</a> leo, a vulputate diam hendrerit et. <a href="#" title="">Aliquam erat</a> volutpat. <a href="#" title="">Aenean sit amet</a> venenatis tellus. Donec in massa urna. Suspendisse quis vulputate augue, ac convallis magna.</p>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.2.3/jquery.min.js"></script>
+  <script src="../jquery-truncate.js"></script>
+  <script>
+    $('#truncate').truncate();
+  </script>
+
+</body>
+</html>
