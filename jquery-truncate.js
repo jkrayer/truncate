@@ -83,12 +83,12 @@
           }
         }
       }
+      //concat the more character
+      output += options.more;
       //close all open tags : </a> || </a></h1></div>
       for (i = openTags.length - 1; i >= 0; i -= 1) {
         output += "</" + openTags[i] + ">";
       }
-      //concat the more character
-      output += options.more;
       //replace DOM text with truncated copy
       $t.html(output);
     }); //end return
