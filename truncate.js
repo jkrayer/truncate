@@ -120,11 +120,6 @@
 
   }
 
-  win.Truncate = Truncate;
+  win.truncate = Truncate;
 
 }(this));
-
-
-
-
-
