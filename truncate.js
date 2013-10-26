@@ -1,4 +1,4 @@
-//
+/*! Truncate (v2.0) Jim Krayer<jameskrayer@yahoo.com> The MIT License */
 (function(win){
 
   /**
@@ -94,7 +94,6 @@
     //Return truncated copy
     return output;
   }
-
 
   /**
    * Handle arguments and run truncation
