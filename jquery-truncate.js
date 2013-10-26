@@ -52,6 +52,10 @@
       while (count < options.words) {
         //there is a match and the
         match = reg.exec($t.html());
+        //exit loop when match returns null
+        //this can happend when the string to truncate is
+        //shorter then the word count
+        if (match === null) { break; }
         //match[1] means this string is HTML, do not count HTML
         if (match[1]) {
           //Add HTML tag to output
