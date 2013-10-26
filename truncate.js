@@ -120,6 +120,21 @@
 
   }
 
-  win.truncate = Truncate;
+  if (typeof jQuery !== "undefined") {
+    jQuery.fn.truncate = function(options) {
+      var defaults = {
+        words : 30,
+        more  : '&hellip;'
+      };
+      options = jQuery.extend(true, {}, defaults, options);
+
+      return this.each(function () {
+        options.copy = jQuery(this).html();
+        jQuery(this).html(Trunc.apply(options,{}));
+      });
+    }
+  }
+
+  return win.truncate = Truncate;
 
 }(this));
