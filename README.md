@@ -34,3 +34,5 @@ args.copy to
 
 ``args.more`` {String/optional/Default:&amp;hellip;} Indicator to concat to the
 end of return string.
+
+Test push to many and one
